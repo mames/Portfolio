@@ -1,0 +1,279 @@
+/*fonts*/
+@font-face {
+    font-family: 'MathleteSkinny';
+    src: url('../fonts/mathlete/Mathlete-Skinny-webfont.eot');
+    src: url('../fonts/mathlete/Mathlete-Skinny-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.woff') format('woff'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.ttf') format('truetype'),
+         url('../fonts/mathlete/Mathlete-Skinny-webfont.svg#MathleteSkinny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*****
+SET UP
+******/
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/*****
+GLOBAL STYLES
+******/
+
+body {
+	font-size: 24px;
+	background: #FFF;
+	padding: 20px;
+}
+
+/*Layout styles*/
+
+#wrapper {
+	width: 90%;
+	background: #fff;
+	margin: 0 auto;
+}
+
+#globalHeader {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#myName {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#myStatement {
+	border-top: 1px dashed;
+	border-bottom: 1px dashed;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*Navigation bar*/
+#globalNav {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#globalNav ul {
+	font-family: "Shadows Into Light";
+	font-size: 36px;
+	color: #000;
+}
+
+#globalNav ul li {
+	float:left;
+	margin-left: 70px;
+}
+
+#globalNav ul li a {
+	display: block;
+	padding: 20px 120px 10px 30px;
+}
+
+a {
+	color: black;
+	text-decoration: none; /* no underline for links */
+}
+
+/*For styling the nav links when hovered*/
+a:hover { 
+	color: #FF3838;
+}
+
+#about a:hover {
+	background: url("../images/header/nav01.png") no-repeat;
+}
+
+.about-page #about a {
+	color: #FF3838;
+	background: url("../images/header/nav01.png") no-repeat;
+}
+
+#projects a:hover {
+	background: url("../images/header/nav02.png") no-repeat;
+}
+
+.projects-page #projects a {
+	color: #FF3838;
+	background: url("../images/header/nav02.png") no-repeat;
+}
+
+#blog a:hover {
+	background: url("../images/header/nav03.png") no-repeat;
+}
+
+/*Content Styles*/
+
+h1 {
+	font-family: "Shadows Into Light";
+	font-size: 50px;
+	color: #FF3838;
+}
+
+h2 {
+	font-family: "MathleteSkinny";
+	font-size: 60px;
+}
+
+/*****
+ABOUT PAGE
+******/
+
+#abstract h2, p {
+	text-align: center;
+}
+
+#abstract p {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	font-family: "Shadows Into Light";
+}
+
+/*For image transitions*/
+#illustrations img {
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	opacity: 0;
+}
+
+/*So only one image is visible at a time*/
+#illustrations img.opaque {
+	opacity: 1;
+}
+
+#illustrations {
+	float: left;
+	margin-top: 100px;
+	width: 400px;
+	margin-left: 50px;
+	height: 700px;
+}
+
+#story {
+	margin: 0 0 0 auto;
+	float: right;
+	width: 400px;
+	min-width: 300px;
+}
+
+#story p {
+	text-align: left;
+	font-family: "Shadows Into Light";
+}
+
+.lead {
+	text-transform: uppercase;
+}
+
+/*Specific image positioning*/
+.annie {
+	position: relative;
+	top: -350px;
+}
+
+.brain {
+	position: relative;
+	top: -700px;
+}
+
+.intel {
+	position: relative;
+	top: -500px;
+}
+
+/*****
+PROJECTS PAGE
+******/
+#portfolio {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*fonts*/
+#garage h1 {
+	font-family: "MathleteSkinny";
+	font-size: 3em;
+}
+
+#garage h2 {
+	font-family: "Shadows Into Light";
+	font-size: 1.5em;
+}
+	
+/*project thumbnail formatting*/
+
+.row img {
+	display: block;
+	float:left;
+	padding: 50px 80px 15px 0px;
+}
+
+.last img {
+	padding-right: 0px;
+}
+
+#twentyp-icon {
+	position: relative;
+	top: 50px;
+	left: 70px;
+}
+
+#csh29-icon {
+	position: relative;
+	top: 50px;
+	left: 115px;
+}
+
+#hackathons-icon {
+	position: relative;
+	left: -25px;
+}
+
+#devrel-icon {
+	position: relative;
+	left: -25px;
+}
+
+#design-icon {
+	position: relative;
+	left: -20px;
+}
+
+/*project thumbnail hover state*/
+
+
+/*project descriptions*/
+.summary p {
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+.heading {
+	text-transform: uppercase;
+}
+/*footer*/
+/*
+#footer {
+	position: relative;
+	bottom: 0;
+	font-size: 16px;
+}*/
